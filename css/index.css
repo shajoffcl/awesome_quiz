@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa&display=swap");
+* {
+  font-family: "Changa", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: url("../images/quiznewback.svg");
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all;
+  transition-duration: 2s;
+}
+
+.navbar {
+  margin: 10px 20px 20px 20px;
+  background: white;
+  box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.2);
+  transition: all;
+  transition-duration: 2s;
+}
+
+.head_size {
+  font-size: 30px;
+}
+
+.anti-row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.main {
+  height: 100vh;
+}
+.card {
+  border-radius: 0;
+  box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+
+.dark-mode {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+  z-index: 20;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+#que_1_btn:hover {
+  fill: royalblue;
+}
+
+@media screen and (max-width: 900px) {
+  .head_size {
+    font-size: 20px;
+  }
+  .navbar {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .svg-col {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #main-svg {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main-section {
+    padding-bottom: 50px;
+  }
+  #main-svg {
+    height: 400px;
+  }
+  .main-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+}
+
+#Vector_84:hover,
+#Vector_88:hover,
+#Vector_92:hover {
+  fill: black;
+}
+
+
+#que1 {
+  animation: updowm 1s linear alternate;
+  transform-box: fill-box;
+  animation-iteration-count: infinite;
+}
+
+#que2, #que3 {
+  animation: updowm 1.5s linear alternate;
+  transform-box: fill-box;
+  animation-iteration-count: infinite;
+}
+
+@keyframes updowm {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(15px);
+  }
+}
+
+.custom-btn {
+  position: absolute;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.custom-btn span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right,#0c002b,#1779ff);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+  0%
+  {
+    transform:translateX(-100%);
+  }
+  100%
+  {
+    transform:translateX(100%);
+  }
+}
+
+.custom-btn span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom,#0c002b,#1779ff);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+
+@keyframes animate2 {
+  0%
+  {
+    transform:translateY(-100%);
+  }
+  100%
+  {
+    transform:translateY(100%);
+  }
+}
+
+
+.custom-btn span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left,#0c002b,#1779ff);
+  animation: animate3 2s linear infinite;
+}
+
+
+@keyframes animate3 {
+  0%
+  {
+    transform:translateX(100%);
+  }
+  100%
+  {
+    transform:translateX(-100%);
+  }
+}
+
+
+.custom-btn span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top,#0c002b,#1779ff);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+}
+
+
+@keyframes animate4 {
+  0%
+  {
+    transform:translateY(100%);
+  }
+  100%
+  {
+    transform:translateY(-100%);
+  }
+}

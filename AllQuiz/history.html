@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../images/titleicon.png"
+    />
+    <link rel="stylesheet" href="../css/history.css" />
+    <title>Awesome Quiz</title>
+  </head>
+  <body>
+    <a href="javascript:void(0)" class="dark-mode" onclick="checkDark()">
+      <svg width="30px" height="30px" viewBox="0 0 16 16" class="bi bi-brightness-high-fill" fill="#7386D5" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
+        <path fill-rule="evenodd" d="M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </svg>
+    </a>
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      id="bar"
+      data-spy="affix"
+      data-offset-top="400"
+    >
+      <div class="#">
+        <a class="navbar-brand" href="../index.html">
+          <span class="head_size">Awesome Quiz</span>
+        </a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" target="_blank">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../AllQuiz/geography.html" target="_blank"
+              >Geography</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../AllQuiz/space.html" target="_blank"
+              >Space</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../AllQuiz/general.html" target="_blank"
+              >General</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section>
+      <div id="questionslide" class="carousel slide" data-interval="false" data-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active" id="start-card">
+              <div class="card que-card">
+                <div class="card-body flex-col justify-content-center align-items-center">
+                  <div class="flex-col">
+                    <h4>Start History Quiz Now!</h4>
+                    <a class="btn card-btn btn-success" href="#questionslide" onclick="enable(); return false;" role="button" data-slide="next">
+                      Start Quiz
+                    </a>
+                  </div> 
+                </div>
+              </div>
+          </div>
+
+          <div class="carousel-item scroll-item" id="question_1">
+              <div class="card que-card justify-content-center align-items-center">
+                <div class="card-body">
+                  <div class="card-title pt-4 pb-4">1. Harihara Raya I who ruled the Vijaynagara Empire for the period 1336-1356 belonged to which dynasty?</div>
+                  <div class="row">
+                    <div class="col-md-5 clip mt-2 mb-2 option">1. Sangama Dynasty</div>
+                    <div class="col-md-6 clip mt-2 mb-2 option">2. Saluva Dynasty</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5 clip mt-2 mb-2 option">3. Tuluva Dynasty</div>
+                    <div class="col-md-6 clip mt-2 mb-2 option">4. Aravidu Dynasty</div>
+                  </div>
+                  <div class="row justify-content-center ml-4 mt-4 mb-4">
+                    <span>Ans :</span><input type="text" class="input-field" name="que_1" id="que_1" />
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="carousel-item scroll-item" id="question_2">
+              <div class="card que-card justify-content-center align-items-center">
+                
+                <div class="card-body">
+                  <div class="card-title pt-4 pb-4">2. During the Gupta Empire, the term “UPARIKARA” was used for</div>
+                  <div class="row">
+                    <div class="col-md-5 clip mt-2 mb-2 option">1. An extra tax levied on all subjects.</div>
+                    <div class="col-md-6 clip mt-2 mb-2 option">2. Periodic supplies of fruits, firewood, flowers etc.</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5 clip mt-2 mb-2 option">3. was a voluntary offering by people to the king.
+                    </div>
+                    <div class="col-md-6 clip mt-2 mb-2 option">4. King’s customary share of the production normally amounting to 1/6th of the production.</div>
+                  </div>
+                  <div class="row justify-content-center ml-4 mt-4 mb-4">
+                    <span>Ans :</span><input type="text" class="input-field" name="que_2" id="que_2" />
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="carousel-item scroll-item" id="question_3">
+              <div class="card que-card justify-content-center align-items-center">
+                <div class="card-body">
+                  <div class="card-title pt-4 pb-4">3. Tuluva Narasa who ruled the Vijaynagara Empire for the period 1491-1503 belonged to which dynasty?</div>
+                  <div class="row">
+                    <div class="col-md-5 clip mt-2 mb-2 option">1. Sangama Dynasty</div>
+                    <div class="col-md-6 clip mt-2 mb-2 option">2. Saluva Dynasty</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5 clip mt-2 mb-2 option">3. Tuluva Dynasty</div>
+                    <div class="col-md-6 clip mt-2 mb-2 option">4. Aravidu Dynasty</div>
+                  </div>
+                  <div class="row justify-content-center ml-4 mt-4 mb-4">
+                    <span>Ans :</span><input type="text" class="input-field" name="que_3" id="que_3" />
+                  </div>
+                </div>
+              </div>
+          </div>
+
+           <div class="carousel-item scroll-item" id="question_4">
+              <div class="card que-card justify-content-center align-items-center">
+                <div class="card-body">
+                  <div class="card-title pt-4 pb-4">4. Chola Empire was divided into:</div>
+                  <div class="row">
+                    <div class="col-md-5 clip mt-2 mb-2 option">1. Mandalams, Nadu, Kurram & Valanadu</div>
+                    <div class="col-md-6 clip mt-2 mb-2 option">2. Mandalams, Nadu, Malkhand & Avanti</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5 clip mt-2 mb-2 option">3. Mandalams, Bhoomi, Avanti &Valanadu</div>
+                    <div class="col-md-6 clip mt-2 mb-2 option">4. Mandalams, Nadu, Kurram & Malkhand</div>
+                  </div>
+                  <div class="row justify-content-center ml-4 mt-4 mb-4">
+                    <span>Ans : </span><input type="text" class="input-field" name="que_4" id="que_4" />
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="carousel-item scroll-item" id="question_5">
+              <div class="card que-card justify-content-center align-items-center">
+                <div class="card-body">
+                  <div class="card-title pt-4 pb-4">5. For which period did Harihara Raya II of Sangma dynasty ruled the Vijaynagara Empire?</div>
+                  <div class="row">
+                    <div class="col-md-5 clip mt-2 mb-2 option">1. 1446-1465</div>
+                    <div class="col-md-6 clip mt-2 mb-2 option">2. 1485-1491</div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5 clip mt-2 mb-2 option">3. 1491-1505</div>
+                    <div class="col-md-6 clip mt-2 mb-2 option">4. 1377-1404</div>
+                  </div>
+                  <div class="row justify-content-center ml-4 mt-4 mb-4">
+                    <span>Ans : </span><input type="text" class="input-field" name="que_5" id="que_5" />
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+          <div class="carousel-item">
+              <div class="card que-card">
+                <div class="card-body flex-col justify-content-center align-items-center">
+                  <div class="flex-col">
+                    <h4>Check Your result Here!</h4>
+                    <button class="btn card-btn btn-success" onclick="cal_parcentage()" type="submit">
+                      Get Result
+                    </button>
+                  </div> 
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      
+      <div class="prev-next-main">
+        <a class="btn card-btn btn-primary" href="#" id="prev" role="button" data-slide="prev">
+          Previous
+        </a>
+        <a class="btn card-btn ml-4 btn-primary" href="#" id="next" role="button" data-slide="next">
+          Next
+        </a>
+      </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../js/history.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js"
+      integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa&display=swap");
+* {
+  font-family: "Changa", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: white;
+  box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.2);
+  transition: all;
+  transition-duration: 2s;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.allow-text {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+}
+
+.main-head {
+  color: #7386D5;
+  padding: 0px 20px 0px 20px;
+}
+
+@media screen and (max-width: 578px) {
+  .main-section {
+    margin: 0px;
+  }
+  .main {
+    display: none;
+  }
+  .main-head {
+    color: black;
+  }
+  #content {
+    padding: 0px;
+  }
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+#content {
+  transition: all;
+  transition-duration: 2s;
+}
+
+.all_question {
+  background-color: whitesmoke;
+  margin: 20px 20px 20px 20px;
+  padding-top: 30px;
+  transition: all;
+  transition-duration: 2s;
+}
+
+.quote {
+  padding: 20px 20px 10px 20px;
+  border-left: 4px solid #1779ff;
+  background: linear-gradient(to right,rgba(0,0,0,0.2),rgba(0,0,225,0.2));
+}
+
+.footer_para {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px 10px 10px 10px;
+}
+
+.question {
+  padding: 5px 0px 20px 0px;
+}
+
+.input-field {
+  margin: 20px 0px 20px 0px;
+  border: none;
+  border-bottom: 2px solid black;
+  background: transparent;
+  transition-property: border-bottom, background;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.input-field:focus {
+  margin: 20px 0px 20px 0px;
+  background: white;
+  border-bottom: 2px solid #A7BFE8;
+  outline: none;
+}
+
+.easy_heading,
+.hard_heading {
+  padding: 20px 0px 20px 0px;
+}
+
+.level_heading {
+  font-size: 30px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.btn-primary {
+  background: black;
+  border-radius: 0px;
+  border: 1px solid #7386D5;
+  transition-property: background, color, border;
+  transition-duration: 0.5s;
+  transition-timing-function: linear;
+}
+
+.btn-primary:hover {
+  background: #7386D5;
+  color: black;
+  border: 1px solid black;
+}
+
+.web_link {
+  color: white;
+}
+
+
+.dark-mode {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+}
